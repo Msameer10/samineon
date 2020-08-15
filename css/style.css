@@ -1,0 +1,451 @@
+*{
+	margin: 5px;
+}
+
+body{
+	margin: 5px;
+	font-family: Bahnschrift,Arial,Serif,San-Serif;
+}
+hr{
+	margin: auto;
+}
+/*Header*/
+header{
+	padding-top: 20px;
+	display: block;
+}
+
+h1{
+	color: #2471A3;
+	font-family: Trajan Pro,Copperplate Gothic Light,Arial,Serif,San-Serif;
+	font-size: 63px;
+	padding: 5px;
+	padding-bottom: 18px;
+	padding-left: 20px;
+	display: inline-block;
+	cursor: context-menu;
+
+}
+
+.signin{
+	display: inline-block;
+	position: relative;
+	float: right;
+	padding-right: 70px;
+	color: white;
+}
+
+.signinbtn a{
+	color: white;
+	text-decoration: none;
+}
+
+.signinbtn:hover{
+	background-color: #CD6155;
+}
+
+.signinbtn {
+	background-color: #A93226;
+ 	color: white;
+  	padding: 17px;
+  	font-size: 16px;
+  	border: none;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	font-weight: bold;
+  	font-family: Bahnschrift;
+  	display: inline-block;
+  	position: relative;
+  	float: right;
+  	border-top: 20px;
+}
+
+.dropbtn {
+  background-color: #148F77;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Bahnschrift;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  padding-right: 80px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F7F9F9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition-duration: 2s;
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	color: #2980B9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #76D7C4;
+  color: white;
+}
+
+.h1one{
+	color: #E74C3C;
+	margin: 0;
+}
+
+.h1two{
+	color: #2471A3;
+	margin: 0;
+}
+
+/*Body*/
+.main{
+	padding: 5px;
+	padding-top: 10px;
+	min-height: 1000px;
+}
+
+/*Image*/
+
+.container {
+  position: relative;
+  width: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/*Glitch Text*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Bahnschrift;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    float: left;
+    justify-content: center;
+    height: 300px;
+    padding: 100px 10px 30px;
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    text-align: center;
+}
+
+h2 {
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h2:hover {
+    animation-play-state: paused;
+}
+
+a {
+    color: #024794;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+
+/*@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+html {
+  height: 100%;
+}
+@media (max-width: 32rem) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  min-height: 100%;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.badge {
+  display: block;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  cursor: pointer;
+  background: url(https://scontent.fhyd12-1.fna.fbcdn.net/v/t1.0-9/117189896_2928797610564990_7585849158636218279_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=ZBhrE_zVHfkAX9Y0HSC&_nc_ht=scontent.fhyd12-1.fna&oh=db154a09af6c088ea74b8b78fb33c255&oe=5F555362) no-repeat 100% 50%;
+  background-size: 120%;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  margin: auto;
+}
+.badge:hover {
+  background-position: 0% 50%;
+}
+.badge:hover .text {
+  -webkit-transform: rotate(-45deg) translate(0px) rotate(-315deg);
+          transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(102, 51, 153, 0.5);
+  width: 20rem;
+  letter-spacing: 1rem;
+  line-height: 20rem;
+  height: 20rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.badge .text {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  left: 50%;
+  top: 50%;
+  margin-top: -5rem;
+  margin-left: -5rem;
+  font-size: 2rem;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  color: #D6DBDF;
+  border-radius: 50%;
+  background: #C0392B;
+  -webkit-transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+          transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+*/
+
+
+
+/*Footer*/
+.cpyr{
+	font-family: Trebuchet MS,Calibri,Candara;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 10px;
+	cursor: context-menu; 
+}
+
+footer{
+	background-color: #CCD1D1;
+	margin: 0;
+	padding-top: 30px;
+	min-height: 100px;
+	display: inline-block;
+	width: 100%;
+}
+
+@media (min-width: 769px){
+  #mobile_menu{
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px){
+	h1{
+		padding-left: 0px;
+	}
+
+  .dropdown{
+    padding-right: 120px;
+    display: none;
+  }
+
+  .overlay{
+    display: none;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  .main{
+    min-height: 500px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ header{
+  padding-top: 0;
+ }
+}
