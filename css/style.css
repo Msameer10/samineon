@@ -127,7 +127,7 @@ h1{
 .main{
 	padding: 5px;
 	padding-top: 10px;
-	min-height: 1500px;
+	min-height: 800px;
 }
 
 /*Image*/
@@ -461,7 +461,7 @@ footer{
  }
 
  .main{
-  min-height: 1100px;
+  min-height: 1250px;
  }
 }
 
