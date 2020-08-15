@@ -379,7 +379,7 @@ footer{
 @media (max-width: 991px){
   h1{
     padding-left: 70px;
-    font-size: 90px;
+    font-size: 150px;
   }
 
   .dropdown{
@@ -420,7 +420,7 @@ footer{
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -434,8 +434,12 @@ footer{
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 45px;
   margin-left: 50px;
+}
+
+#container h2{
+  font-size: 50px;
 }
 
 #main {
@@ -449,6 +453,15 @@ footer{
 }
  header{
   padding-top: 0;
+ }
+
+ div.cpyr{
+  font-size: 32px;
+  padding-bottom: 40px;
+ }
+
+ .main{
+  min-height: 1100px;
  }
 }
 
