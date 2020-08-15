@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
+
 /*************************************************************
   HEADER
 **************************************************************/
@@ -28,7 +36,7 @@ header{
 
 h1{
   color: #2471A3;
-  font-family: Trajan Pro,Copperplate Gothic Light,Arial,Serif,San-Serif;
+  font-family: Trajan Pro,Cinzel,Arial,Serif,San-Serif;
   font-size: 63px;
   padding: 5px;
   padding-bottom: 18px;
@@ -134,6 +142,7 @@ section {
   box-shadow: 0 0 20px #333;
   z-index: 1;
 }
+
 /*************************************************************
   HEADINGS
 **************************************************************/
@@ -148,7 +157,6 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translateZ(-1px) scale(2) translate(-25%, -25%);
-  background: transparent;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -223,18 +231,26 @@ footer{
   width: 100%;
 }
 
-@media (min-width: 601px){
+@media (min-width: 992px){
   #mobile_menu{
+    display: none;
+  }
+
+  h2.sec1{
+    display: none;
+  }
+
+  h2.sec2{
     display: none;
   }
 }
 
 
 
-@media (max-width: 600px){
+@media (max-width: 991px){
   h1{
     padding-left: 120px;
-    font-size: 60px;
+    font-size: 120px;
 
   }
 
@@ -248,8 +264,48 @@ footer{
   }
 
   h2.hd{
-    font-size: 30px;
+    font-size: 80px;
     text-align: center;
+  }
+
+  h2.sec1{
+    color: #ffffff;
+  }
+
+  h2.sec2{
+    color: #ffffff;
+  }
+
+  span.gettoknowme{
+    font-family: 'Squada One', cursive;
+    font-weight: lighter;
+  }
+
+  #aboutme{
+    font-family: 'Overpass Mono', monospace;
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  span.edu{
+    font-family: 'Sansita', sans-serif;
+    color: #C0392B;
+  }
+
+  span.edu1{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 30px;
+  }
+
+  span.edu2{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 20px;
+    color: #B3B6B7;
+  }
+
+  .section1, .section2::before, .section3{
+    background: black;
   }
 
   .main{
@@ -309,5 +365,9 @@ footer{
  }
  header::before{
   background: black;
+ }
+
+ div.cpyr{
+  font-size: 32px;
  }
 }

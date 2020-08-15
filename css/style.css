@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
 *{
 	margin: 5px;
 }
@@ -17,7 +19,7 @@ header{
 
 h1{
 	color: #2471A3;
-	font-family: Trajan Pro,Copperplate Gothic Light,Arial,Serif,San-Serif;
+	font-family: Trajan Pro,Cinzel,Arial,Serif,San-Serif;
 	font-size: 63px;
 	padding: 5px;
 	padding-bottom: 18px;
@@ -367,18 +369,18 @@ footer{
 	width: 100%;
 }
 
-@media (min-width: 769px){
+@media (min-width: 992px){
   #mobile_menu{
     display: none;
   }
 }
 
 
-
-@media (max-width: 768px){
-	h1{
-		padding-left: 0px;
-	}
+@media (max-width: 991px){
+  h1{
+    padding-left: 70px;
+    font-size: 90px;
+  }
 
   .dropdown{
     padding-right: 120px;
@@ -449,3 +451,4 @@ footer{
   padding-top: 0;
  }
 }
+
