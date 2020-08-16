@@ -297,7 +297,7 @@ footer a button{
 
   h2.hd{
     font-size: 80px;
-    text-align: center;
+    text-align: right;
   }
 
   h2.sec1{
@@ -338,6 +338,18 @@ footer a button{
     font-family: 'Red Hat Text', sans-serif;
     font-size: 27px;
     color: #B3B6B7;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: block;
+    background: url(../images/abtme_mo.png) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.1);
+    min-height: 100%;
+    z-index: -2;
   }
 
   .section1, .section2::before, .section3{
@@ -399,9 +411,7 @@ footer a button{
  header{
   padding-top: 0;
  }
- header::before{
-  background: black;
- }
+ 
 
  div.cpyr{
   font-size: 32px;
