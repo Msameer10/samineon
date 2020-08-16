@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
 
 /*************************************************************
@@ -171,6 +172,12 @@ h2 {
   z-index: 3;
 }
 
+.section3 h2 {
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+
 /*************************************************************
   BASIC STYLES
 **************************************************************/
@@ -244,6 +251,14 @@ footer a button{
   cursor: pointer;
 }
 
+.license{
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Inconsolata', monospace;
+
+}
+
 @media (min-width: 992px){
   #mobile_menu{
     display: none;
@@ -254,6 +269,10 @@ footer a button{
   }
 
   h2.sec2{
+    display: none;
+  }
+
+  h2.sec3{
     display: none;
   }
 }
@@ -286,6 +305,10 @@ footer a button{
   }
 
   h2.sec2{
+    color: #ffffff;
+  }
+
+  h2.sec3{
     color: #ffffff;
   }
 
@@ -389,5 +412,8 @@ footer a button{
   left: 320px;
   font-size: 40px;
   
-}
+ }
+ .license{
+  font-size: 15px;
+ }
 }
