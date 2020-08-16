@@ -369,6 +369,13 @@ footer{
 	width: 100%;
 }
 
+.license{
+  text-decoration: none;
+  text-align: center;
+  font-size: 10px;
+}
+
+
 @media (min-width: 992px){
   #mobile_menu{
     display: none;
@@ -463,5 +470,11 @@ footer{
  .main{
   min-height: 1250px;
  }
+
+ .license{
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
 }
 
