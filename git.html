@@ -4,11 +4,14 @@
 <meta charset="utf-8">
 	<title>Get in Touch - Samineon</title>
 <link rel="shortcut icon" href="icon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style type="text/css">
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 *{
 	margin: 5px;
@@ -141,6 +144,141 @@ h1{
 }
 
 
+/***social btns***/
+
+body {
+  margin:0;
+  padding:0;
+  background: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+ul {
+  position:absolute;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display:flex;
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  list-style:none;
+  margin:0 5px;
+}
+
+ul li a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height:80px;
+  transition: .5s;
+  padding-right: 14px;
+}
+
+ul li a span {
+  padding:0;
+  margin:0;
+  position:absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: .5s;
+}
+
+ul li a {
+  text-decoration: none;
+  display:absolute;
+  display:block;
+  width:210px;
+  height:80px;
+  background: #F4F6F7;
+  text-align:left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0,0);
+  transition:.5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+ul li a:before {
+  content: '';
+  position: absolute;
+  top:10px;
+  left:-20px;
+  height:100%;
+  width:20px;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+ul li a:after {
+  content: '';
+  position: absolute;
+  bottom:-20px;
+  left:-10px;
+  height:20px;
+  width:100%;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+ul li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+}
+
+ul li:hover .fa {
+  color:#fff;
+}
+
+ul li:hover span {
+  color:#fff;
+}
+
+ul li:hover:nth-child(1) a{
+  background: #3b5998;
+}
+ul li:hover:nth-child(1) a:before{
+  background: #365492;
+}
+ul li:hover:nth-child(1) a:after{
+  background: #4a69ad;
+}
+
+ul li:hover:nth-child(2) a{
+  background: #00aced;
+}
+ul li:hover:nth-child(2) a:before{
+  background: #097aa5;
+}
+ul li:hover:nth-child(2) a:after{
+  background: #53b9e0;
+}
+
+ul li:hover:nth-child(3) a{
+  background: #1A5276;
+}
+ul li:hover:nth-child(3) a:before{
+  background: #154360;
+}
+ul li:hover:nth-child(3) a:after{
+  background: #1F618D;
+}
+
+ul li:hover:nth-child(4) a{
+  background: #e4405f;
+}
+ul li:hover:nth-child(4) a:before{
+  background: #d81c3f;
+}
+ul li:hover:nth-child(4) a:after{
+  background: #e46880;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+
+
 
 /*Footer*/
 .cpyr{
@@ -168,10 +306,26 @@ footer{
 
 }
 
+.mosocialbtns{
+  font-family: 'Great Vibes','Playball', cursive;
+  color: black;
+  position: absolute;
+  left: 15%;
+  top: 45%;
+  text-align: center;
+  font-size: 5em;
+}
+
+
+
 
 @media (min-width: 992px){
   #mobile_menu{
     display: none;
+  }
+
+  .mosocialbtns{
+  	display: none;
   }
 }
 
@@ -235,6 +389,46 @@ footer{
   margin-left: 50px;
 }
 
+.pcsocialbtns{
+	display: none;
+}
+
+/**mobile social btns **/
+
+.fa {
+  padding: 20px;
+  font-size: 110px;
+  width: 110px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #e4405f;
+  color: white;
+}
+
 
 #main {
   transition: margin-left .5s;
@@ -261,8 +455,11 @@ footer{
  .license{
   font-size: 15px;
   }
-}
 
+
+
+
+}
 
 
 </style>
@@ -292,16 +489,53 @@ footer{
   <div class="dropdown-content">
   <a href="index.html">HOME</a>	
   <a href="about.html">ABOUT ME</a>
-  <a href="#">3 *&^R*</a>
-  </div>
 </div>
 </header>
-<br>
+<br><br><br>
 
 <div class="main">
 
+<div class="pcsocialbtns">
+<img src="images/highfive.png"><br><br><br><br><br><br><br>
 
 
+<ul>
+  <li>
+    <a href="https://www.facebook.com/M.Sameer10/">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <span> - Facebook</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.twitter.com/Mo_Sameer10">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <span> - Twitter</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/msameer10/">
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+      <span> - LinkedIn</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/m.sameer10">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <span> - Instagram</span>
+    </a>
+  </li>
+</ul>
+</div>
+
+</div>
+
+<div class="mosocialbtns">
+<p class="message">Send me a High Five !</p>
+<br><br>
+<a href="https://www.facebook.com/M.Sameer10/" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com/Mo_Sameer10" class="fa fa-twitter"></a>
+<a href="https://www.linkedin.com/in/msameer10/" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/m.sameer10" class="fa fa-instagram"></a>
 
 </div>
 
@@ -319,7 +553,6 @@ function closeNav() {
 }
 </script>
 
-<br>
 <!-- %@R*edOdFPDLe&SBGezl -->
 <footer>
 	<div>
