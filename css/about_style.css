@@ -315,28 +315,30 @@ footer a button{
   span.gettoknowme{
     font-family: 'Squada One', cursive;
     font-weight: lighter;
+    font-size: 110px;
   }
 
   #aboutme{
     font-family: 'Overpass Mono', monospace;
     color: #fff;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: lighter;
   }
 
   span.edu{
     font-family: 'Sansita', sans-serif;
     color: #C0392B;
+    font-size: 100px;
   }
 
   span.edu1{
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 35px;
+    font-size: 45px;
   }
 
   span.edu2{
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 27px;
+    font-size: 35px;
     color: #B3B6B7;
   }
 
