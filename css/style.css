@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
 
 
 
@@ -39,58 +41,6 @@ h1{
 	position: relative;
 	display: inline-block;
 	float: left;
-}
-
-.dropbtn {
-  background-color: #148F77;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-family: Bahnschrift;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  float: right;
-  padding-right: 90px;
-  padding-top: 40px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #F7F9F9;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  transition-duration: 2s;
-  margin: 0;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #3498DB;
-  color: #00FFD8;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #76D7C4;
-  color: white;
 }
 
 .h1one{
@@ -230,8 +180,8 @@ h1{
 }
 
 .section:nth-child(10) {
-  background-color: #fff;
-  color: #fff;
+  background-color: #F0F3F4;
+  color: #000;
   top: 900vh;
   z-index: 10;
 }
@@ -239,6 +189,47 @@ h1{
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+.section:nth-child(11) {
+  background-color: #fff;
+  color: #fff;
+  top: 1000vh;
+  z-index: 11;
+}
+.section:nth-child(11) .fixed {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.arrow-down {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #616A6B; /* Adjust arrow color and size as needed */
+}
+
 
 .logo{
 	text-decoration: none;
@@ -250,4 +241,43 @@ h1{
   color: #000000;
   font-family: "Martian Mono";
   font-size: 1.5rem;
+}
+
+
+.subtxt1 {
+  color: #CB4335;
+  font-family: Lugrasimo;
+}
+
+.subtxt2 {
+  color: #000;
+  font-family: Lugrasimo;
+}
+
+
+.subtxt4 , .subtxt5{
+  font-family: Cinzel;
+}
+
+.subtxt4{
+  color: #E74C3C;
+}
+
+.subtxt5{
+  color: #2471A3;
+}
+
+
+.subtxt6{
+  font-family: Rosarivo;
+  color: #14246E;
+}
+
+.links{
+  font-size: 25px;
+}
+
+.links a {
+  color: #000;
+  text-decoration: none;
 }
