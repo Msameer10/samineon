@@ -180,7 +180,7 @@ h1{
 }
 
 .section:nth-child(10) {
-  background-color: #F0F3F4;
+  background-color: #D0D3D4;
   color: #000;
   top: 900vh;
   z-index: 10;
@@ -220,7 +220,7 @@ h1{
 
 .arrow-down {
   position: absolute;
-  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  bottom: 110px; /* Adjust the distance from the bottom as needed */
   left: 50%;
   transform: translateX(-50%);
   width: 0;
