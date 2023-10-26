@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lugrasimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {font-family: Heorot;src: url('heorot-font/Heorot-4rLK.ttf');}
 
 
 
@@ -267,10 +269,19 @@ h1{
   color: #2471A3;
 }
 
-
 .subtxt6{
   font-family: Rosarivo;
   color: #14246E;
+}
+
+.subtxt7{
+  font-family: 'Playfair Display', Cinzel;
+  color: #D35400;
+}
+
+.subtxt8{
+  font-family: Heorot;
+  color: #000000;
 }
 
 .links{
